@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:promise/recommended",
+    "plugin:security/recommended",
+    "plugin:sonarjs/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "import",
+    "promise",
+    "security",
+    "sort-class-members",
+    "sonarjs",
+    "json"
+  ],
+  "ignorePatterns": ["node_modules/", "__generated__/"],
+  "rules": {
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "newline-per-chained-call": "warn",
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "object-curly-newline": "off",
+    "quotes": "off",
+    "sort-class-members/sort-class-members": [
+      2,
+      {
+        "order": [
+          "[static-properties]",
+          "[properties]",
+          "[conventional-private-properties]",
+          "constructor",
+          "[static-methods]",
+          "[methods]",
+          "[conventional-private-methods]"
+        ],
+        "accessorPairPositioning": "getThenSet"
+      }
+    ]
+  }
+}
