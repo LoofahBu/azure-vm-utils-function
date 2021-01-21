@@ -42,8 +42,8 @@ class ComputeManager {
     const group = this.resourcesGroupName;
     const response = await handle.virtualMachines.start(group, vmName);
 
-    // * Even though we receive response, vm still waits its agent up.
-    // * User still can't using SSH to access it. So we should periodically check if whether agent is available.
+    // * Even though we received response, vm still waits its agent up.
+    // * User still can't access it. So we should periodically check if whether agent is available.
     const timer = new Promise((resolve) => {
       const handleInterval = async () => {
         const instanceView = await handle.virtualMachines.instanceView(group, vmName);

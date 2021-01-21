@@ -1,5 +1,5 @@
 {
-  "name": "azure-compute-utils",
+  "name": "azure-compute-utils-function",
   "private": true,
   "version": "1.0.0",
   "description": "A utility function to help somebody can start, stop or deallocate Azure VM",
