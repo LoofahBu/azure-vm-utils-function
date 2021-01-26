@@ -2,7 +2,7 @@
 
 ## Background
 
-This project can make developers easily start or deallocate Azure Linux VM by sending HTTP request. It can help us reducing the cloud cost if you integrate it with other monitor system such like *AlertManager*, *Azure Monitor*. You can also trigger them from your application.
+This project can make developers easily start or deallocate Azure Linux VM by sending HTTP request. It can help us reduce the cloud cost if you integrate it with other monitor system such like *AlertManager*, *Azure Monitor*. You can also trigger them from your application.
 
 ## Quick Start (VSCode)
 
