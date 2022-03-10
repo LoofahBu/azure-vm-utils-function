@@ -5,9 +5,11 @@ People always use GPU machines when they are training machine learning models. G
 
 We deploy monitoring daemon on GPU VMs to trace its usage and define alerts. When it observes GPU usage is low, the alert system will send an HTTP request to deallocate VM.
 
-This project can make developers quickly manipulate VM by Azure Function. Now it only supports starting or deallocating actions.
+This project can make developers quickly manipulate VM by Azure Function. Now it only supports actions below:
+- Start
+- Deallocate
 
-You should attach VM subscription, resource group, and virtual machine names in the HTTP header and define secrets to let the function have permission to execute those actions.
+You should attach VM **subscription**, **resource group**, and **virtual machine names** in the HTTP header and define secrets to let the function have permission to execute those actions.
 
 ## Quick Start (VSCode)
 
